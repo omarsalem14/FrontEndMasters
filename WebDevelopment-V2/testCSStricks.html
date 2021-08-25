@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .flex-container{
+            display:flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .flex-container > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+        .box-1{
+            background-color: tomato;
+        }
+        .box-2{
+            background-color:gold;
+        }
+        .box-3{
+            background-color:deepskyblue;
+            text-align: left;
+        }
+        .box-4{
+            background-color:hotpink;
+        }
+        .box-5{
+            background-color:lightgreen;
+        }
+        @media all and (min-width: 600px) {
+            .box-2,.box-4 { flex: 1 0 0; }
+        }
+        @media all and (min-width: 800px) {
+            .box-3    { flex: 3 0px; }
+            .box-2 { order: 1; } 
+            .box-3    { order: 2; }
+            .box-4 { order: 3; }
+            .box-5  { order: 4; }
+        }
+
+        body {
+              padding: 2em; 
+            }
+
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <div class="box-1">Header</div>
+        <div class="box-2">Aside1</div>
+        <div class="box-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
+        <div class="box-4">Aside2</div>
+        <div class="box-5">Footer</div>
+    </section>
+</body>
+</html>

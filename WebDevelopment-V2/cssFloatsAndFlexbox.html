@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floats And Flexbox</title>
+    <style>
+        *{box-sizing: border-box;}
+        /* Floates */
+        .floated div{
+            float: left;
+        }
+
+        /* Flexs */
+        .flex-container{
+            display: flex;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        /* reverse */
+        .reverse{
+            flex-direction: row-reverse;
+        }
+
+        /* Column,Column Revers */
+        /* .column{
+            flex-direction: column-reverse;
+        } */
+
+        /* Justify Content Right*/
+        /* .jc-right{
+            justify-content: flex-end;
+        } */
+
+         /* Justify Content Center*/
+         /* .jc-center{
+            justify-content:center;
+        } */
+
+         /* Justify Content Space Between*/
+         /* .jc-sb{
+            justify-content:space-between;
+        } */
+
+        /* Justify Content Space Around*/
+        .jc-sa{
+            justify-content:space-around;
+        }
+
+        /* Align Items Flex End */
+        /* .ai-fe{
+            align-items: flex-end;
+            padding-top: 70px;
+        } */
+
+        /* Align Items Center */
+        .ai-center{
+            align-items: center;
+        }
+
+        /* Align Items Stretch */
+        /* .ai-stretch{
+            align-items: stretch;
+            height: 200px;
+        }
+        .no-h{
+            height: inherit;
+        } */
+        .box1{
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+        }
+        .box2{
+            color: white;
+            background-color: red;
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+        .box3{
+            color: white;
+            background-color: green;
+            border: 1px solid black;
+            width: 100px;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Laying Out Tags -->
+        <!-- <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div> -->
+
+    <!-- Floats -->
+        <!-- <div class="floated">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+        </div> -->
+
+    <!-- Flex -->
+    <!-- <div class="flex-container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Reverse -->
+    <!-- <div class="flex-container reverse">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Column,Column Revers -->
+    <!-- <div class="flex-container column">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Justify Content Right -->
+    <!-- <div class="flex-container jc-right">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Justify Content Center -->
+    <!-- <div class="flex-container jc-center">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+     <!-- Justify Content Space Between -->
+     <!-- <div class="flex-container jc-sb">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Justify Content Space Around -->
+    <!-- <div class="flex-container jc-sa">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+    <!-- Align Items Flex End-->
+    <!-- <div class="flex-container ai-fe">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+     <!-- Align Items Center-->
+     <!-- <div class="flex-container ai-center">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div> -->
+
+     <!-- Align Items Stretch-->
+     <!-- <div class="flex-container ai-stretch">
+        <div class="box1 no-h">1</div>
+        <div class="box2 no-h">2</div>
+        <div class="box3 no-h">3</div>
+    </div> -->
+
+     <!-- Align Items Stretch-->
+     <div class="flex-container ai-center reverse jc-sa">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

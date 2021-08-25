@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <!-- <style>
+  .hover-example {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+  }
+  .hover-example:hover {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+  }
+</style> -->
+<style>
+ .first-child-example:nth-child(1){color: blue;}
+ .first-child-example:nth-child(2){color: brown;}
+ .first-child-example:nth-child(3){color: crimson;}
+ p:first-of-type{color: darkgoldenrod;}
+ p:last-of-type{color:darkgreen;}
+ *{
+     font-weight: bold;
+ }
+  </style>
+</head>
+<body>
+    <!-- <div class="hover-example">Hover your mouse over me</div> -->
+    <ol>
+        <p>First Of Type</p>
+        <li class="first-child-example">First</li>
+        <li class="first-child-example">Second</li>
+        <P>Second Of Type</P>
+        <li class="first-child-example">Third</li>
+        <p>Last Of Type</p>
+      </ol>
+</body>
+</html>

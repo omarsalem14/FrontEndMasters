@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: arial, Geneva, sans-serif;
+}
+.container {
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
+}
+article {
+  background-color: rgb(204, 204, 44);
+  display: inline-block;
+  justify-content: space-between;
+  width: 18% auto;
+}
+img {
+  width: 100%;
+}
